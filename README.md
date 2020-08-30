@@ -8,7 +8,7 @@ that is more original.
 old Repo https://github.com/EthanPikeDev/InstaFlame
 
 # Demo:
-![DemoGIF](https://s8.gifyu.com/images/pinitiitit.gif)
+![DemoGIF](https://s8.gifyu.com/images/ezgif.com-optimize-29155d72562489877.gif)
 
 [Live Preview](https://ethaninstaflame.herokuapp.com/)
 
