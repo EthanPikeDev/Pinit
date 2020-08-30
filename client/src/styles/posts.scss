@@ -1,0 +1,109 @@
+.posts {
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.post {
+  width: 500px;
+  height: 700px;
+  border: 2px #dedede solid;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+  &-header {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    .info {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: auto 1rem;
+
+      }
+
+      span {
+        font-size: 20px;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &-image {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-fotter {
+    width: 100%;
+    height: 12%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    position: relative;
+
+    .icons {
+      display: flex;
+      align-items: center;
+      height: 40%;
+      width: 100%;
+      margin-bottom: 7px;
+
+
+
+      span {
+        margin: 1rem;
+
+        i {
+          margin: .6rem 0;
+          font-size: 1.6rem;
+          cursor: pointer;
+        }
+      }
+
+    }
+
+    form {
+      width: 100%;
+      height: 60%;
+      margin: 0;
+
+      input {
+        margin: 0;
+        width: 100%;
+        padding: 10px 12px;
+        border: 2px #dedede solid;
+        border-radius: 4px;
+
+        &:focus {
+          outline-color: #999;
+        }
+      }
+    }
+  }
+}

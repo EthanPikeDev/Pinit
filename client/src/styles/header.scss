@@ -1,0 +1,42 @@
+nav {
+  height: 70px;
+  color: $dark-color;
+  border-bottom: 2px #dedede solid;
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+
+    .navbar-logo {
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      padding: 2px;
+      color: $primary-color;
+    }
+
+    .navbar-links {
+      display: flex;
+
+      a,
+      button {
+        color: $dark-color;
+        text-decoration: none;
+        margin-right: 1.2rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      button {
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

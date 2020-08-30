@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+@import "./variable.scss";
+@import "./login.scss";
+@import "./header.scss";
+@import "./profile.scss";
+@import "./profiles.scss";
+@import "./posts.scss";
+@import "./post.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Serif";
+  font-size: 1rem;
+  line-height: 1.6;
+  color: $dark-color;
+  margin: 0;
+  padding: 0;
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.pictures-title {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.6rem;
+}
+
+.alert {
+  padding: 0.5rem;
+  margin: 0.7rem 0;
+  opacity: 0.9;
+  background: $light-color;
+  color: #333;
+  border-radius: 5px;
+}
+
+.alert-primary {
+  background: $primary-color;
+  color: #fff;
+}
+
+.alert-light {
+  background: $light-color;
+  color: #333;
+}
+
+.alert-dark {
+  background: $dark-color;
+  color: #fff;
+}
+
+.alert-danger {
+  background: $danger-color;
+  color: #fff;
+}
+
+.alert-success {
+  background: $success-color;
+  color: #fff;
+}
+
+.alert-white {
+  background: #fff;
+  color: #333;
+  border: #ccc solid 1px;
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  .img-container {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .logo {
+      width: 200px;
+      height: 200px;
+      color: $primary-color;
+      margin: 2rem auto;
+    }
+
+    a {
+      margin: 2rem auto;
+      background: $primary-color;
+      padding: 6px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      color: $light-color;
+    }
+  }
+}
+
+.page-notfound {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .svg {
+    width: 80%;
+    height: 70%;
+  }
+}

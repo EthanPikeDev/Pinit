@@ -1,0 +1,245 @@
+.profile-section {
+  position: relative;
+
+  .profile-modification {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    display: flex;
+
+    .edit {
+      padding: 6px 12px;
+      background-color: $dark-color;
+      color: $light-color;
+      height: 30px;
+      border-radius: 4px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+
+      i {
+        margin-right: .4rem;
+      }
+    }
+
+    .delete-post {
+      height: 30px;
+      padding: 6px 12px;
+      background: $primary-color;
+      color: $light-color;
+      border: 0;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+
+  .profile-info-container {
+    display: flex;
+    margin: 3rem auto;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .profile-image {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 195px;
+        height: 190px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: 1rem;
+      }
+    }
+
+    .profile-info {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+
+      span.profile-key {
+        color: $primary-color;
+      }
+
+      .name {
+        margin: 0.6rem 0;
+
+        p {
+          font-weight: bold;
+          font-size: 20px;
+          text-transform: capitalize;
+        }
+
+        button {
+          margin-left: 0.5rem;
+          padding: 6px 10px;
+          border: 0;
+          border-radius: 4px;
+          font-size: 14px;
+          cursor: pointer;
+          border: $primary-color solid 1px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .follow {
+          background-color: $primary-color;
+          color: #fff;
+        }
+
+        .unfollow {
+          background-color: #fff;
+          color: $primary-color;
+
+        }
+      }
+
+      .info {
+        display: flex;
+        margin-bottom: 0.6rem;
+
+        span {
+          margin-right: 5rem;
+        }
+      }
+
+      .age {
+        margin-bottom: 0.6rem;
+
+        a {
+          text-decoration: none;
+          color: $dark-color;
+        }
+      }
+    }
+  }
+}
+
+/* upload form styles */
+form {
+  margin: 30px auto 10px;
+  text-align: center;
+}
+
+label input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $primary-color;
+  border-radius: 50%;
+  margin: 10px auto;
+  line-height: 30px;
+  color: $primary-color;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+label:hover {
+  background: $primary-color;
+  color: white;
+}
+
+.output {
+  height: 60px;
+  font-size: 0.8rem;
+}
+
+.error {
+  color: var(--error);
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-bottom: 3rem;
+
+  .img-wraper {
+    width: 307px;
+    height: 297px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.edit-profile {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    color: $primary-color;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+
+  form {
+    width: 60%;
+
+    .file-img {
+      display: flex;
+      flex-direction: column;
+
+
+
+
+    }
+
+    .form-groupe {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        width: 100%;
+        border: 0;
+        background: transparent;
+        color: $dark-color;
+
+        &:hover {
+          background: transparent;
+          color: $dark-color;
+
+        }
+      }
+
+      input {
+        width: 100%;
+        border-radius: 4px;
+        padding: 6px 12px;
+        border: 1px solid $dark-color;
+      }
+
+    }
+
+    button {
+      padding: 8px 15px;
+      border: none;
+      border-radius: 4px;
+      background-color: $primary-color;
+      color: $light-color;
+      margin: 1rem;
+      cursor: pointer;
+    }
+  }
+}
