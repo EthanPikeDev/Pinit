@@ -1,5 +1,6 @@
+//enter your mongorui connection string and jwt secret key below
 module.exports = {
   MONGOURI:
-    "mongodb+srv://admin:admin@cluster0.fgyca.mongodb.net/?retryWrites=true&w=majority",
-  JWT_SECRET: "jsonwebtokensecretjsonwebtokensecrettopsuccer",
+    "",
+  JWT_SECRET: "",
 };
